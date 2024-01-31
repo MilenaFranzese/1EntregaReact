@@ -34,20 +34,20 @@ function ProfileCard({titulo,arroba,img}){
                     <div className="columns">
 
                         <div className="column">
-                            <button  onClick={handleClickSuma} className="button is-success is-fullwidth">+</button>
-                        </div>
-
-                        <div>
-                        <p>Likes: {count}</p>
-                        </div>
-
-                        <div className="column">
                             <button onClick={handleClickResta} className="button is-success is-fullwidth">-</button>
                         </div>
 
+
+                        <div>
+                        <p>Unidades: {count}</p>
+                        </div>
+
+                        
+                        <div className="column">
+                            <button  onClick={handleClickSuma} className="button is-success is-fullwidth">+</button>
+                        </div>
+
                     </div>
-
-
 
                 </div>
             </div>
