@@ -18,8 +18,9 @@ function NavBar({titulo,img, enlace}) {
                 
                 <div className="navbar-end">
 
-                    <a href="#" className="navbar-link">{enlace}</a>
-                    <a href="#" className="navbar-link">{enlace}</a>
+                    <a href="#" className="navbar-item">{enlace}</a>
+                    <a href="#" className="navbar-item">{enlace}</a>
+                    <a href="#" className="navbar-item">{enlace}</a>
                     <CardWidget/>
 
                 </div>

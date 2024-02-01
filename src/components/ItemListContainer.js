@@ -1,7 +1,8 @@
 import { useState } from "react";
 // el State se utiliza para cuando quiero mdificar algo que ve el usuario en pantalla
+import "./styles/ItemListContainer.css"
 
-function ProfileCard({titulo,arroba,img}){
+function ItemListContainer ({titulo,detalle,img}){
 
     function handleClickSuma(){
         setCount( count + 1)
@@ -29,22 +30,22 @@ function ProfileCard({titulo,arroba,img}){
             <div className="card-content">
                 <div className="media-content">
                     <h3 className="title">{titulo}</h3>
-                    <p className="subtitle">{arroba}</p>
+                    <p className="subtitle">{detalle}</p>
 
                     <div className="columns">
 
                         <div className="column">
-                            <button onClick={handleClickResta} className="button is-success is-fullwidth">-</button>
+                            <button onClick={handleClickResta} className="button is-success">-</button>
                         </div>
 
 
-                        <div>
+                        <div className="column">
                         <p>Unidades: {count}</p>
                         </div>
 
                         
                         <div className="column">
-                            <button  onClick={handleClickSuma} className="button is-success is-fullwidth">+</button>
+                            <button  onClick={handleClickSuma} className="button is-success">+</button>
                         </div>
 
                     </div>
@@ -55,4 +56,4 @@ function ProfileCard({titulo,arroba,img}){
     )
 }
 
-export default ProfileCard;
+export default ItemListContainer;

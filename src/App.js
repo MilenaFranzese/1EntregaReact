@@ -1,5 +1,5 @@
 import NavBar from "./components/Nav";
-import ProfileCard from "./components/ProfileCards";
+import ItemListContainer from "./components/ItemListContainer";
 import Icon from "./img/icon-plant.png"
 import Img1 from "./img/img(1).jpg";
 import Img2 from "./img/img(2).jpg";
@@ -21,15 +21,15 @@ function App(){
 
                         <div className="columns">
                             <div className="column is-4">
-                            <ProfileCard titulo="Filodendro Peruviano" arroba="Monstera adansonii" img={Img1}/>
+                            <ItemListContainer titulo="Filodendro Peruviano" detalle="Monstera adansonii" img={Img1}/>
                             </div>
 
                             <div className="column is-4">
-                            <ProfileCard titulo="Costilla de Adan" arroba="Monstera deliciosa" img={Img2}/>
+                            <ItemListContainer titulo="Costilla de Adan" detalle="Monstera deliciosa" img={Img2}/>
                             </div>
 
                             <div className="column is-4">
-                            <ProfileCard titulo="Gomero variegado" arroba="Ficus Elástica variegado" img={Img3}/>
+                            <ItemListContainer titulo="Gomero variegado" detalle="Ficus Elástica variegado" img={Img3}/>
                             </div>
                         </div>
                 
